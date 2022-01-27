@@ -30,8 +30,10 @@
         </div>
     </div>
 
-    <p class="text-center text-sm italic mb-10">(On page
-        {{ pagination.pageNumber + 1 }}
-        of
-        {{ pagination.pages.length }}.)</p>
+    {% if pagination.pages.length > 1 %}
+        <p class="text-center text-sm italic mb-10">Page
+            {{ pagination.pageNumber + 1 }}
+            of
+            {{ pagination.pages.length }}.)</p>
+    {% endif %}
 </div>
