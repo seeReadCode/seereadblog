@@ -1,8 +1,8 @@
 {
   "name": "seereadblog",
   "description": "blog a dog",
-  "url": "https://something.github.io",
-  "baseUrl": "/11r/",
+  "url": "https://seereadcode.github.io",
+  "baseUrl": "/seereadblog/",
   "author": {
     "handle": "@seereadnow",
     "name": "Christopher Reed"
@@ -14,11 +14,11 @@
   "feed": {
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://seereadcode.github.io/seereadblog"
   },
   "jsonfeed": {
     "filename": "feed.json",
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://seereadcode.github.io/seereadblog/feed/feed.json"
   }
 }
