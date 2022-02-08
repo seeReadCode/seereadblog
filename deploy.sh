@@ -9,7 +9,7 @@ npm run build
 cd dist
 
 # uncomment the below line and update it appropriately if using a custom domain
-# echo "your site dot com" > CNAME
+echo "www.ytmnb.com" > CNAME
 
 git init
 git add -A
