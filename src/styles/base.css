@@ -178,3 +178,6 @@ hr {
 #privacy-notice-button-container:hover {
   @apply bg-gray-500 rounded cursor-pointer;
 }
+p svg {
+  display: inline;
+}

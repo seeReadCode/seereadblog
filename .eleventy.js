@@ -1,4 +1,8 @@
+
 module.exports = config => {
+  const mathjaxPlugin = require("eleventy-plugin-mathjax");
+  config.addPlugin(mathjaxPlugin);
+
   const markdownIt = new require('markdown-it')({
     typographer: true,
     linkify: true,
