@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reading recommendations for product developers who consult
-excerpt: "Yet another list of 5 things to read"
+title: 5 book recommendations for consulting full stack developers
+excerpt: "Yet another list of books you don't have time to read"
 date: 2022-01-28
 tags:
   - post
@@ -10,7 +10,7 @@ tags:
 
 There are so many lists out there for software development, programming, etc that just go on and on.  Here's my attempt at a short list that touches on the tech but focuses on what software can do for people.
 
-1. [Fred Brooks' _No Silver Bullet_](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf).  A succinct statement of 'the problem of software': complexity, conformity, invisibility.  If you want more, follow it with [Ben Moseley and Peter Marks's _Out of the Tarpit_](http://curtclifton.net/papers/MoseleyMarks06a.pdf) or [Brooks's _Mythical Man Month_](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959).
+1. [Fred Brooks' _No Silver Bullet_](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf).  A succinct statement of 'the problem of software': complexity, conformity, invisibility, changeability.  If you want more, follow it with [Ben Moseley and Peter Marks's _Out of the Tarpit_](http://curtclifton.net/papers/MoseleyMarks06a.pdf), [Brooks's _Mythical Man Month_](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959), or Dijkstra's [EWD 1036](https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html).
 
 2. [Nicole Forsgren, Jez Humble, and Gene Kim's _Accelerate: The Science of Lean Software and DevOps_](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339).  Three authors, two subtitles, and 24 specific recommendations based on a bunch of research. 288 pages but a good chunk of that is a review of their methodology.  Not much filler in here. Maybe follow it with [Camille Fournier's _The Manager's Path_](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) if you are figuring out how to handle not just tech but a team.
 
