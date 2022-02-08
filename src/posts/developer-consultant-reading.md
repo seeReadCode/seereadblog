@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 book recommendations for consulting full stack developers
+title: 5 book recommendations for full stack developers
 excerpt: "Yet another list of books you don't have time to read"
 date: 2022-01-28
 tags:
