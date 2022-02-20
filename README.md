@@ -1,6 +1,6 @@
 # seeread blog
 
-[11ty](https://www.11ty.dev) via [11r](https://reeseschultz.github.io/11r/)
+[11ty](https://www.11ty.dev) via [11r](https://github.com/reeseschultz/11r) c.f. [11r demo](https://reeseschultz.github.io/11r/)
 
 ## Setup
 

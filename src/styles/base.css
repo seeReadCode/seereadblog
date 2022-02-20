@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold leading-tight mt-3;
+  @apply font-bold leading-tight mt-3 mb-3;
 }
 
 h1,
@@ -96,11 +96,18 @@ hr {
   content: '— ';
 }
 
+.content blockquote {
+  border-left: 0.5rem solid #718096;
+  padding: 0.5em 1em;
+  margin: 1.5em 1em;
+}
+
 .content > blockquote {
   border-left: 0.5rem solid #718096;
   margin: 1.5em 1.5em;
   padding: 0.5em 1em;
 }
+
 
 .content > img {
   display: block;

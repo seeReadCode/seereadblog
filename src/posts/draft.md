@@ -32,9 +32,82 @@ I once stayed with someone at Hampshire College one time who burned all of his t
 - Search goods
     - bring, buy, build
 - on the UI/X, affordance, flow
-    - Norman
     - Nielsen
+        ##### Goals from Jakob Nielsen
+
+
+        - Learnability
+        - Efficiency
+        - Memorability
+        - Errors (as in low error rate)
+        - Satisfaction
+
+        What about
+
+        - Readability
+        - Hierarchy
+        - Appeal
+
     - Krug
+        ##### Affordance from Donald Norman
+        A knob affords twisting.  Let the form follow the function.  The solution should be self-documenting.
+
+        **7 stages of action**
+
+        1. Forming the goal
+        2. Forming the intention
+        3. Specifying an action
+        4. Executing the action
+        5. Perceiving the state of the world
+        6. Interpreting the state of the world
+        7. Evaluating the outcome
+
+    - Norman
+        ##### Do Not Make Me Think by Steve Krug
+
+        What do your users do on the site?
+
+        **Diagnostic Tools**
+
+        - Visual heirarchy
+        - Scanning
+        - Flowchart
+
+        **Layouts**
+
+        - Follow web conventions
+        - Segment page
+        - Make clicks obvious
+        - Where do I start?
+
+        **Text notes**
+
+        - No word instructions or less
+        - Scale / direction / location
+        - Wayfinding
+
+        **Conventions**
+
+        - Site id
+        - Sections / subsections
+        - Utilities
+        - Page name
+        - Local dev
+        - Small text version at bottom
+        - Persistent nav (site id / search / utilities / sections)
+    - AIDA
+        ##### AIDA
+        - Attention
+        - Interest
+        - Desire
+        - Action
+    - [Self determining](http://en.wikipedia.org/wiki/Self-determination_theory):
+        1. Competence
+        1. Autonomy
+        1. Relatedness
+
+
+
 - on client relations
 - on staying small
     - In a software project team of 10, there are probably 3 people who produce enough defects to make them net negative producers.  Gordon Schul

@@ -4,6 +4,7 @@ module.exports = config => {
   config.addPlugin(mathjaxPlugin);
 
   const markdownIt = new require('markdown-it')({
+    html: true,
     typographer: true,
     linkify: true,
   });
