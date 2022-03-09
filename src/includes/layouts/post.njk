@@ -7,32 +7,34 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
 {% block body %}
     <p>{{url}}</p>
     <div>
-        <h2>{{ title }}</h2>
+        <div >
+            <h2>{{ title }}</h2>
 
-        {% if excerpt %}
-            <p class="excerpt">{{ excerpt }}</p>
-        {% endif %}
-
-        {% if tags %}
-            <div class="mb-2">
-                {% for tag in tags %}
-                    {%- if tag !== "post" -%}
-                        <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>
-                    {%- endif -%}
-                {% endfor %}
-            </div>
-        {% endif %}
-
-        {% if date %}
-            {% if updatedDate and (date|string) !== (updatedDate|string) %}
-              <p class="text-sm italic">Last updated on
-                    <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span>. Created on
-                    <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
-            {% else %}
-                <p class="text-sm italic">Created on
-                    <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+            {% if excerpt %}
+                <p class="excerpt">{{ excerpt }}</p>
             {% endif %}
-        {% endif %}
+
+            {% if tags %}
+                <p class="my-2">
+                    {% for tag in tags %}
+                        {%- if tag !== "post" -%}
+                            <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>&nbsp;
+                        {%- endif -%}
+                    {% endfor %}
+                </p>
+            {% endif %}
+
+            {% if date %}
+                {% if updatedDate and (date|string) !== (updatedDate|string) %}
+                  <p class="my-2 text-sm italic">Last updated on
+                        <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span>. Created on
+                        <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+                {% else %}
+                    <p class="my-2 text-sm italic">Created on
+                        <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+                {% endif %}
+            {% endif %}
+        </div>
 
         <div class="content post">
             {% if content | toc %}

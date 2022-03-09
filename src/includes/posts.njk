@@ -8,15 +8,23 @@
 
                 <p class="excerpt">{{ post.data.excerpt }}</p>
 
+                {% if post.data.tags.length > 1 %}
+                <p class="tags my-3">
+                {% endif %}
                 {% for tag in post.data.tags %}
                     {%- if tag !== "post" -%}
                         <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>&nbsp;
                     {%- endif -%}
                 {% endfor %}
+                {% if post.data.tags.length > 1 %}
+                </p>
+                {% endif %}
 
-                <span class="block md:inline md:pt-4 pt-2 text-sm created-date" datetime="{{ post.data.date }}">
-                    {{ post.data.date | dateDisplay }}
-                </span>
+                <p class="my-3">
+                    <span class="text-sm created-date" datetime="{{ post.data.date }}">
+                        {{ post.data.date | dateDisplay }}
+                    </span>
+                </p>
             </div>
         {% endif %}
     {% endfor %}
