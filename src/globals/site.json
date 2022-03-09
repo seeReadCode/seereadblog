@@ -1,11 +1,11 @@
 {
   "name": "You're the man now blog",
-  "description": "Wherein C.M. Reed shares his thoughts",
+  "description": "Tech realism, full stack development, GIFs",
   "url": "https://www.ytmnb.com",
   "baseUrl": "/",
   "author": {
     "handle": "@seereadnow",
-    "name": "Christopher Reed"
+    "name": "Chris Reed"
   },
   "images": {
     "twitter": "twitter.jpg",
