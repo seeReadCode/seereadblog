@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold leading-tight mt-3 mb-3;
+  @apply font-normal leading-tight mt-3 mb-3;
 }
 
 h1,
@@ -56,11 +56,12 @@ h4 {
 }
 
 a {
-  @apply font-bold;
+  @apply font-normal;
+  @apply border-b border-transparent;
 }
 
 a:hover {
-  @apply underline;
+  @apply border-white;
 }
 
 p {
@@ -94,6 +95,14 @@ hr {
 
 .attribution::before {
   content: '— ';
+}
+
+.content a {
+  @apply border-dashed border-white;
+} 
+
+.content a:hover {
+  @apply border-solid;
 }
 
 .content blockquote {
@@ -142,7 +151,7 @@ hr {
 .previous-page,
 .first-page,
 .last-page {
-  @apply font-bold whitespace-nowrap text-center;
+  @apply whitespace-nowrap text-center;
 }
 
 .next-page::after {
