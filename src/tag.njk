@@ -16,7 +16,7 @@ permalink: /tag/{{ tag }}/
 {% extends 'page.njk' %}
 
 {% block body %}
-  <p class="text-center text-sm italic mb-6">(Posts filtered by <strong>{{tag}}</strong>.)</p>
+  <p class="text-center mb-6"><a href="/tag/{{tag}}">#{{tag}}</a></p>
 
   {% set posts = collections[tag] | reverse %}
 

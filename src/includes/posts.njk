@@ -1,7 +1,12 @@
 <div>
     {% for post in posts %}
         {% if not post.data.draft %}
-            <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+            <div class="border-dotted border-b border-gray-300 py-6">
+                <p class="">
+                    <span class="text-sm created-date" datetime="{{ post.data.date }}">
+                        {{ post.data.date | dateDisplay }}
+                    </span>
+                </p>
                 <h2>
                     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
                 </h2>
@@ -9,7 +14,7 @@
                 <p class="excerpt">{{ post.data.excerpt }}</p>
 
                 {% if post.data.tags.length > 1 %}
-                <p class="tags my-3">
+                <p class="tags">
                 {% endif %}
                 {% for tag in post.data.tags %}
                     {%- if tag !== "post" -%}
@@ -20,11 +25,6 @@
                 </p>
                 {% endif %}
 
-                <p class="my-3">
-                    <span class="text-sm created-date" datetime="{{ post.data.date }}">
-                        {{ post.data.date | dateDisplay }}
-                    </span>
-                </p>
             </div>
         {% endif %}
     {% endfor %}

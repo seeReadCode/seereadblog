@@ -1,7 +1,2 @@
 module.exports = (date) =>
-  new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC'
-  });
+  new Date().toISOString().split('T')[0].replaceAll('-', '.');

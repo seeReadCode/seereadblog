@@ -1,5 +1,5 @@
 .tag {
-  @apply text-sm lowercase text-white;
+  @apply text-sm lowercase;
 }
 
 .tag:before {

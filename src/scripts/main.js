@@ -1,4 +1,6 @@
 import '../styles/tailwind.css';
+import "@fontsource/ibm-plex-sans";
+
 import { handlePrivacyPolicyNoticeDismissal } from './privacy-policy.js';
 import { handleCodeCopying } from './copy.js';
 

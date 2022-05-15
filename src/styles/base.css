@@ -8,64 +8,8 @@
 	white-space: pre;
 }
 
-html,
-body {
-  @apply antialiased text-gray-300 bg-gray-900;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-normal leading-tight mt-3 mb-3;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a,
 a {
-  @apply text-white;
-}
-
-h1 {
-  @apply text-5xl;
-}
-
-h2 {
-  @apply text-3xl;
-}
-
-h3 {
-  @apply text-2xl;
-}
-
-h4 {
-  @apply text-xl;
-}
-
-a {
-  @apply font-normal;
-  @apply border-b border-transparent;
-}
-
-a:hover {
-  @apply border-white;
-}
-
-p {
-  @apply text-lg my-2;
+	color: red;
 }
 
 pre {
@@ -99,22 +43,22 @@ hr {
 
 .content a {
   @apply border-dashed border-white;
-} 
+}
 
 .content a:hover {
   @apply border-solid;
 }
 
 .content blockquote {
-  border-left: 0.5rem solid #718096;
-  padding: 0.5em 1em;
-  margin: 1.5em 1em;
+  border-left: 0.2rem solid red;
+  padding: 0em 1em;
+  margin: 1.5em 0em;
 }
 
 .content > blockquote {
-  border-left: 0.5rem solid #718096;
-  margin: 1.5em 1.5em;
-  padding: 0.5em 1em;
+  border-left: 0.2rem solid red;
+  margin: 1.5em 0em;
+  padding: 0em 1em;
 }
 
 
@@ -139,13 +83,16 @@ hr {
   @apply text-lg mr-12 ml-12 pr-2 pl-2;
 }
 
+.content > h1,
+.content > h2,
+.content > h3,
+.content > h4,
+.content > h5,
+.content > h6,
 .content > p {
   @apply pt-3;
 }
 
-.excerpt {
-  @apply my-3;
-}
 
 .next-page,
 .previous-page,
@@ -194,6 +141,14 @@ hr {
 #privacy-notice-button-container:hover {
   @apply bg-gray-500 rounded cursor-pointer;
 }
+
 p svg {
   display: inline;
+	color: red;
+}
+
+blockquote ul {
+	@apply pt-2;
+	@apply text-sm;
+
 }
