@@ -23,8 +23,8 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
                 <p class="excerpt">{{ excerpt }}</p>
             {% endif %}
 
-            {% if tags %}
-                <p class="pb-2">
+            {% if tags.length > 1 %}
+                <p class="">
                     {% for tag in tags %}
                         {%- if tag !== "post" -%}
                             <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>&nbsp;
@@ -34,7 +34,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
             {% endif %}
 
             {% if content | toc %}
-                <h3 class="uppercase text-sm">Contents</h3>
+                <h3 class="pt-2 uppercase text-sm">Contents</h3>
                 {{ content | toc | safe }}
             {% endif %}
         </div>

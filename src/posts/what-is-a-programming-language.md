@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wait — what is a programming language?
-excerpt: ""
+excerpt: "You talkin’ to me?"
 date: 2022-01-29
 tags:
   - post

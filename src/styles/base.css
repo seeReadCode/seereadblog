@@ -80,7 +80,7 @@ hr {
 .content > h6,
 .content > ul,
 .content > ol,
-.content > p {
+.content p {
   @apply mt-5;
 }
 

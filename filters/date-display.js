@@ -1,2 +1,2 @@
 module.exports = (date) =>
-  new Date().toISOString().split('T')[0].replaceAll('-', '.');
+  new Date(date).toISOString().split('T')[0].replaceAll('-', '.');
