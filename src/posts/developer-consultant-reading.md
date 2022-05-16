@@ -6,6 +6,7 @@ date: 2022-01-28
 tags:
   - post
   - reading
+  - fullstack
 ---
 
 There are so many lists out there for software development, programming, etc that just go on and on.  Here's my attempt at a short list that touches on the tech but focuses on what software can do for people.

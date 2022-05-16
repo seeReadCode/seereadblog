@@ -5,6 +5,8 @@ excerpt: ""
 date: 2022-01-29
 tags:
   - post
+  - fullstack
+
 ---
 
 >What we mean by a programming language is something we use to tell a computer what to do.
@@ -27,7 +29,7 @@ That said, there can be a frustrating conundrum where easy to learn but difficul
 
 So when selecting a language or a framework for a project, consider how you will go about answering these questions:
 - Who will design, implement, change, and maintain this codebase? How?
-- What do we want the computers to do? 
+- What do we want the computers to do?
 - What do the users want and need?
 - What does the communities want and need?
 - How will we measure failures? Success?

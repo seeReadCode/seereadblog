@@ -2,8 +2,8 @@
     {% for post in posts %}
         {% if not post.data.draft %}
             <div class="border-dotted border-b border-gray-300 py-6">
-                <p class="">
-                    <span class="text-sm created-date" datetime="{{ post.data.date }}">
+                <p class="text-sm">
+                    <span class="created-date" datetime="{{ post.data.date }}">
                         {{ post.data.date | dateDisplay }}
                     </span>
                 </p>

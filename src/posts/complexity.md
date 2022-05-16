@@ -5,6 +5,7 @@ excerpt: "Simple is as simple does"
 date: 2022-02-05
 tags:
   - post
+  - tech-realism
 
 ---
 
@@ -17,7 +18,7 @@ We have many ways to suffer complexity. Religion, law, science, art, math, philo
 > Computer programming, however, creates with an exceedingly tractable medium. The programmer builds from pure thought-stuff: concepts and very flexible representations thereof.  Because the medium is tractable, we expect few difficulties in implementation; hence our pervasive optimism. Because our ideas are faulty, we have bugs; hence our optimism is unjustified.
 > - Fred Brooks, [The Mythical Man Month](https://www.cs.drexel.edu/~yfcai/CS451/RequiredReadings/MythicalManMonth.pdf), p. 15
 
-Now, in the realm of computation, given an algorithm with an input $n\$ we can think of its complexity as a function $f(n)$. That is: 
+Now, in the realm of computation, given an algorithm with an input $n\$ we can think of its complexity as a function $f(n)$. That is:
 
 $$ n \to f(n) $$
 
@@ -25,9 +26,9 @@ We can use [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) for co
 
 Indeed, when I try to think about the implications of [value moving up the stack](https://ev.medium.com/value-is-moving-up-the-stack-bc6d8ee797ff) as per Ev Williams _and_ [software eating the world](https://www.wsj.com/articles/SB10001424053111903480904576512250915629460) as per Marc Andreesen, and all the artifacts and affordances of such aggregated complexity – I tend to just get overloaded and shutdown.
 
-> Computing's core challenge is how not to make a mess of it. If people object that any science has to meet that challenge, we should give a double rebuttal. 
+> Computing's core challenge is how not to make a mess of it. If people object that any science has to meet that challenge, we should give a double rebuttal.
 >
-> Firstly, machines are so fast and storage capacities are so huge that we face orders of magnitude more room for confusion, the propagation and diffusion of which are easily inadvertently mechanized. 
+> Firstly, machines are so fast and storage capacities are so huge that we face orders of magnitude more room for confusion, the propagation and diffusion of which are easily inadvertently mechanized.
 >
 > Secondly, because we are dealing with artefacts, all unmastered complexity is of our own making; there is no one else to blame and so _we had better learn how not to introduce the complexity in the first place_.
 > - Edsger Dijsktra, [EWD 1243 The Next Fifty Years](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD12xx/EWD1243.html)
@@ -40,7 +41,7 @@ We have the idea of induced demand, and the ensuing logjams of [Braess's paradox
 
 This rebound effect suggests that our programmatic landscape will only get worse for us as individuals and groups.
 
-Consider [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) that a software interface will reflect the social boundaries of the organization that created it.  That might sound a little tenuous at first. But if you are sizing a team for a new project, refactoring a legacy codebase, or tracking down out of date dependencies, it may well ring loudly in your ears. 
+Consider [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) that a software interface will reflect the social boundaries of the organization that created it.  That might sound a little tenuous at first. But if you are sizing a team for a new project, refactoring a legacy codebase, or tracking down out of date dependencies, it may well ring loudly in your ears.
 
 No wonder then that we see not only all manner of programer productivity 'hacks' and likewise management guidance to reduce organizational complexity. Interrupts must be reduced. Hierarchies flattened. Onboarding must be accelerated.  Developers shouldn't have to worry about lunch.  
 
@@ -56,6 +57,6 @@ To what extent are we simply shifting or amoritizing complexity and exploiting t
 
 Yes it may be easier than ever to spin up a web app with all sorts of real time functionality and UX polish – but keep in mind we also have banks running COBOL, private equity firms milking our local governments through vendor lock-in, Windows XP running on nuclear subs.  
 
-Sarah Sheard who has done some amazing work [describing complexity of systems and software](https://resources.sei.cmu.edu/asset_files/Presentation/2015_017_001_447399.pdf) quotes a US Air Force report that software sustainment can run to 70% of the total cost for of the life of a software project in her excellent [Dynamics of Software Sustainment](https://resources.sei.cmu.edu/asset_files/Article/2014_101_001_446824.pdf). 
+Sarah Sheard who has done some amazing work [describing complexity of systems and software](https://resources.sei.cmu.edu/asset_files/Presentation/2015_017_001_447399.pdf) quotes a US Air Force report that software sustainment can run to 70% of the total cost for of the life of a software project in her excellent [Dynamics of Software Sustainment](https://resources.sei.cmu.edu/asset_files/Article/2014_101_001_446824.pdf).
 
 That both explains some of the appeal of the [F-35](https://www.reuters.com/article/us-usa-lockheed-f35/u-s-f-35-fighter-modernization-could-cost-16-billion-through-2024-idUSKCN1GK02M) – but also is cause for concern for the future of our overall programmatic future.

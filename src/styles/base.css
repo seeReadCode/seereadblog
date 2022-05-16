@@ -12,6 +12,10 @@ a {
 	color: red;
 }
 
+a:hover {
+	@apply border-b border-red-500;
+}
+
 pre {
   @apply my-2 text-sm tracking-wider break-words;
   border-radius: 25px;
@@ -30,7 +34,7 @@ hr {
 }
 
 .toc > ol > li {
-  font-size: 1em;
+  @apply text-sm;
 }
 
 .attribution {
@@ -41,24 +45,9 @@ hr {
   content: '— ';
 }
 
-.content a {
-  @apply border-dashed border-white;
-}
-
-.content a:hover {
-  @apply border-solid;
-}
-
+.content > blockquote,
 .content blockquote {
-  border-left: 0.2rem solid red;
-  padding: 0em 1em;
-  margin: 1.5em 0em;
-}
-
-.content > blockquote {
-  border-left: 0.2rem solid red;
-  margin: 1.5em 0em;
-  padding: 0em 1em;
+	@apply px-4 my-4 border-l-2 border-red-500;
 }
 
 
@@ -80,7 +69,7 @@ hr {
 
 .content > ol > li,
 .content > ul > li {
-  @apply text-lg mr-12 ml-12 pr-2 pl-2;
+  @apply text-lg mr-12 ml-12 pr-2 pl-2 mt-2;
 }
 
 .content > h1,
@@ -89,10 +78,15 @@ hr {
 .content > h4,
 .content > h5,
 .content > h6,
+.content > ul,
+.content > ol,
 .content > p {
-  @apply pt-3;
+  @apply mt-5;
 }
 
+.content > h3 {
+	@apply font-bold;
+}
 
 .next-page,
 .previous-page,
@@ -148,7 +142,7 @@ p svg {
 }
 
 blockquote ul {
-	@apply pt-2;
+	@apply mt-2;
 	@apply text-sm;
 
 }
