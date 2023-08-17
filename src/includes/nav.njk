@@ -1,15 +1,16 @@
 <div>
-    <div class="md:flex justify-evenly mb-6">
+            {#
+    <div class="md:flex justify-evenly my-6">
         <div class="flex justify-between mx-auto w-full">
             {% if pagination.href.previous %}
-                <div class="mx-auto mb-4">
-                    <a class="previous-page" href="{{ pagination.href.previous | url }}">Next Page</a>
+                <div class="mx-auto my-4">
+                    <a class="md:mb-2" href="{{ pagination.href.previous | url }}">previous</a>
                 </div>
             {% endif %}
 
             {% if pagination.href.next %}
-                <div class="mx-auto mb-4">
-                    <a class="next-page md:mb-2" href="{{ pagination.href.next | url }}">Previous Page</a>
+                <div class="mx-auto my-4">
+                    <a class="md:mb-2" href="{{ pagination.href.next | url }}">next</a>
                 </div>
             {% endif %}
         </div>
@@ -17,23 +18,24 @@
         <div class="flex justify-between mx-auto w-full">
             {% if page.url !== pagination.href.first %}
                 <div class="mx-auto mb-4">
-                    <a class="first-page md:mb-2" href="{{ pagination.href.first | url }}">First Page</a>
+                    <a class="md:mb-2" href="{{ pagination.href.first | url }}">first</a>
                 </div>
 
             {% endif %}
 
             {% if page.url !== pagination.href.last %}
-                <div class="mx-auto">
-                    <a class="last-page" href="{{ pagination.href.last | url }}">Last Page</a>
+                <div class="mx-auto mb-4">
+                    <a class="md:mb-2" href="{{ pagination.href.last | url }}">last</a>
                 </div>
             {% endif %}
         </div>
     </div>
 
     {% if pagination.pages.length > 1 %}
-        <p class="text-center text-sm italic mb-10">Page
+        <p class="text-center text-sm italic mb-10">
             {{ pagination.pageNumber + 1 }}
-            of
-            {{ pagination.pages.length }}.)</p>
+            /
+            {{ pagination.pages.length }}</p>
     {% endif %}
+            #}
 </div>

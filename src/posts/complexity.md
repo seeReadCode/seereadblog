@@ -37,26 +37,36 @@ Were it only so simple to keep complexity out as the computers and code prolifer
 
 Indeed, there's a plain [rebound effect](https://en.wikipedia.org/wiki/Rebound_effect_(conservation)) from simple interfaces to high power computing and consequent complexity.  When we consider [Wirth's Law](https://en.wikipedia.org/wiki/Wirth%27s_law) that software gets slower as the hardware gets faster, we could be forgiven for extending it to our own thinking and larger social structure as we feedback more into the computers.
 
-We have the idea of induced demand, and the ensuing logjams of [Braess's paradox](https://en.wikipedia.org/wiki/Braess%27s_paradox) where more roads to lead to a slower road network.  Or see the [SnackWell effect](https://en.wikipedia.org/wiki/SnackWell_effect) or [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) or the [Downs-Thomson paradox](https://en.wikipedia.org/wiki/Downs%E2%80%93Thomson_paradox).
+We have the idea of induced demand, and the ensuing logjams of [Braess's paradox](https://en.wikipedia.org/wiki/Braess%27s_paradox) where more roads lead to a slower road network.  See also the [SnackWell effect](https://en.wikipedia.org/wiki/SnackWell_effect), [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox), or the [Downs-Thomson paradox](https://en.wikipedia.org/wiki/Downs%E2%80%93Thomson_paradox).
 
-This rebound effect suggests that our programmatic landscape will only get worse for us as individuals and groups.
+**This rebound effect suggests that our the interface of humans and computers is on course to get worse for us as individuals _and_ groups but disparately and differently**.
 
 Consider [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) that a software interface will reflect the social boundaries of the organization that created it.  That might sound a little tenuous at first. But if you are sizing a team for a new project, refactoring a legacy codebase, or tracking down out of date dependencies, it may well ring loudly in your ears.
 
 No wonder then that we see not only all manner of programer productivity 'hacks' and likewise management guidance to reduce organizational complexity. Interrupts must be reduced. Hierarchies flattened. Onboarding must be accelerated.  Developers shouldn't have to worry about lunch.  
 
-As we lay down planks over the tarpits, building a golden path for developers, we also prioritize user focused design, lean this, agile that, blazing a happy path for users so the software endeavor can thrive. We will tame complexity and deliver value, hurrah!
+Setting planks across tarpits, building a golden path for developers, we also prioritize user focused design. Lean this, agile that, blazing another happy path for users so the software endeavor can thrive. We will tame complexity and deliver value.
 
-But holding that software is eating the world, value is moving up the stack, and keeping Conway's law in mind, well, it all seems bully for the 1% – and to a certain extent end users and developers.
+So in summary...
 
-But caution is merited. With a hat tip again to Brooks' essential difficulties of software listed in [No Silver Bullet](https://web.archive.org/web/20160910002130/http://worrydream.com/refs/Brooks-NoSilverBullet.pdf), software allows problems to be made invisible or inescapble, complexity to be taken for granted or exploded, changes to become difficult or catastrophic, and integration impossible or ineradicable.
+1. Software is eating the world
+2. Value is moving up the stack
+3. Software incorporates and ties into the chaos of social boundaries
 
-With more people programming now than ever before, more users, more stake holders – not to mention more dependencies, higher expectations, more requirements – more code! – and on a happy occassion more budget – all of that means more entropy, more interconnected but disjoint effects – fragility.
+Well, it all seems bully for the 1% – and occassionally users, developers, and free loaders - caution is merited. With a hat tip again to Brooks' list of essential difficulties of software listed in [No Silver Bullet](https://web.archive.org/web/20160910002130/http://worrydream.com/refs/Brooks-NoSilverBullet.pdf), we can say:
 
-To what extent are we simply shifting or amoritizing complexity and exploiting the inability of disempowered groups to keep either tabs or pace?
+1. software allows problems to be made invisible or inescapble
+2. its complexity to be taken for granted or exploded
+3. changes become difficult or catastrophic 
+4. integration can become impossible or ineradicable.
 
-Yes it may be easier than ever to spin up a web app with all sorts of real time functionality and UX polish – but keep in mind we also have banks running COBOL, private equity firms milking our local governments through vendor lock-in, Windows XP running on nuclear subs.  
+With more people programming now than ever before, more users, more stake holders – not to mention more dependencies, higher expectations, more requirements – more code, more AI – and on a happy occassion, more budget – all of that means more entropy, more interconnected but disjoint effects – fragility which, in aggregate, makes for a fierce form of Kessler Syndrome.
 
-Sarah Sheard who has done some amazing work [describing complexity of systems and software](https://resources.sei.cmu.edu/asset_files/Presentation/2015_017_001_447399.pdf) quotes a US Air Force report that software sustainment can run to 70% of the total cost for of the life of a software project in her excellent [Dynamics of Software Sustainment](https://resources.sei.cmu.edu/asset_files/Article/2014_101_001_446824.pdf).
+To what extent are we simply shifting or amoritizing complexity and exploiting the inability of disempowered groups to keep tabs much less pace?
 
-That both explains some of the appeal of the [F-35](https://www.reuters.com/article/us-usa-lockheed-f35/u-s-f-35-fighter-modernization-could-cost-16-billion-through-2024-idUSKCN1GK02M) – but also is cause for concern for the future of our overall programmatic future.
+Yes, it may be easier than ever to spin up a web app with all sorts of real time functionality and UX polish or a chatbot to execute business compromise email scams. Democratization. Keep in mind we also have banks running COBOL, the stripping of value and care from organizations and communities, Windows XP running on nuclear subs... need I go on?
+
+Now, I am scratching at the surface here and not giving us much of a way out.  To get a bit more granular - perhaps you can lead me out of this pit - read some of Sarah Sheard's amazing work [describing complexity of systems and software](https://resources.sei.cmu.edu/asset_files/Presentation/2015_017_001_447399.pdf). For instance, in her excellent [Dynamics of Software Sustainment](https://resources.sei.cmu.edu/asset_files/Article/2014_101_001_446824.pdf), she quotes a US Air Force report that software sustainment can run to 70% of the total cost for of the life of a software project.  That both explains some of the appeal of the [F-35](https://www.reuters.com/article/us-usa-lockheed-f35/u-s-f-35-fighter-modernization-could-cost-16-billion-through-2024-idUSKCN1GK02M) – a veritable [Homer](https://simpsons.fandom.com/wiki/The_Homer) - but also is cause for great concern for our programmatic future. 
+
+Perhaps [Elinor Ostrom](https://en.wikipedia.org/wiki/Elinor_Ostrom)'s work on governance and
+the commons makes for the right complement to, say, [this analysis by voting machine expert Harri Hursti on the government's evolving zero trust mandate](https://www.youtube.com/watch?v=AvqcM36g5hg).

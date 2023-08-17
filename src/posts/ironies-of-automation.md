@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ironies of Automation
-excerpt: Lisanne Bainbridge lays it down for us with a little help from Homer J. Simpson
+title: Understanding Bainbridge's Ironies of Automation via Homer memes
+excerpt: Lisanne Bainbridge meet Homer J. Simpson
 date: 2022-02-19
 updatedDate: 2022-02-19
 html: true
