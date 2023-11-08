@@ -28,14 +28,15 @@ I once stayed with someone at Hampshire College one time who burned all of his t
         - "network effects", cascading, lock-in, 
     - ease of use, pit of despair, pit of success, cobra effect
     - docker, setting up, amateurization, adobe
+
 - heuristics, theory
+
 - Search goods
     - bring, buy, build
+
 - on the UI/X, affordance, flow
     - Nielsen
         ##### Goals from Jakob Nielsen
-
-
         - Learnability
         - Efficiency
         - Memorability
@@ -173,4 +174,3 @@ I once stayed with someone at Hampshire College one time who burned all of his t
         - can't shape work or evaluate work
     - lower cost
     - cost avoidance: pennywise pound foolish
-    -

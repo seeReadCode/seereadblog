@@ -55,7 +55,7 @@ So in summary...
 
 Well, it all seems bully for the 1% – and occassionally users, developers, and free loaders - caution is merited. With a hat tip again to Brooks' list of essential difficulties of software listed in [No Silver Bullet](https://web.archive.org/web/20160910002130/http://worrydream.com/refs/Brooks-NoSilverBullet.pdf), we can say:
 
-1. software allows problems to be made invisible or inescapble
+1. software allows problems to be made invisible or inescapable
 2. its complexity to be taken for granted or exploded
 3. changes become difficult or catastrophic 
 4. integration can become impossible or ineradicable.
