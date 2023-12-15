@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>YTMNB.com</title>
+	<subtitle>“You’re the man now! blog - tech realism, full stack development, asides</subtitle>
+	
+	<link href="https://www.ytmnb.com/feed/feed.xml" rel="self"/>
+	<link href="https://www.ytmnb.com"/>
+	<updated>2023-12-13T00:00:00Z</updated>
+	<id>https://www.ytmnb.com</id>
+	<author> 
+		<name>Chris Reed</name>
+	</author>
+	
+	<entry>
+		<title>radio radio</title>
+		<link href="https://www.ytmnb.com/post/radio-radio/"/>
+		<updated>2023-12-13T00:00:00Z</updated>
+		<id>https://www.ytmnb.com/post/radio-radio/</id>
+		<content type="html">&lt;p&gt;I listen to a lot of music via radio shows.  So much that I have a calendar 😬&lt;/p&gt;
+&lt;p&gt;Some shows are vinyl only. Some are fun. Some are local. Some are deep.&lt;/p&gt;
+&lt;br /&gt;
+&lt;iframe src=&quot;https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;ctz=America%2FChicago&amp;title=Radio%20On&amp;mode=WEEK&amp;showTabs=1&amp;showNav=1&amp;showDate=0&amp;showTitle=0&amp;src=NzgxMW1wcHRjbDVuZGNma2lzbWR2YW8yNnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23009688&quot; style=&quot;border:solid 1px #777&quot; width=&quot;800&quot; height=&quot;600&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+&lt;br /&gt;
+&lt;p&gt;Have a favorite to recommend?  &lt;a href=&quot;https://forms.gle/tnWervmbpQ71yzhP9&quot;&gt;Post me here, please&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to livestream a presentation with screen sharing and audio sharing</title>
+		<link href="https://www.ytmnb.com/post/how-to-livestream-a-presentation-with-screen-sharing-and-audio-sharing/"/>
+		<updated>2023-03-16T00:00:00Z</updated>
+		<id>https://www.ytmnb.com/post/how-to-livestream-a-presentation-with-screen-sharing-and-audio-sharing/</id>
+		<content type="html">&lt;p&gt;A brief overview of how to operate a live-stream in the year 2023 as noted in running &lt;a href=&quot;https://www.fullstackdfw.com/&quot;&gt;Full Stack DFW&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;mix-video-with-picture-in-picture&quot; tabindex=&quot;-1&quot;&gt;Mix video with picture in picture&lt;/h3&gt;
+&lt;p&gt;Yes, you would use &lt;a href=&quot;https://www.twitch.tv/broadcast/studio&quot;&gt;Twitch Studio&lt;/a&gt;.  But why stop there.&lt;/p&gt;
+&lt;p&gt;We use &lt;a href=&quot;https://obsproject.com/&quot;&gt;OBS - Open Broadcast Software&lt;/a&gt; for more control&lt;/p&gt;
+&lt;p&gt;Steps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install OBS&lt;/li&gt;
+&lt;li&gt;Add a camera capture and a screen capture&lt;/li&gt;
+&lt;li&gt;Start a virtual camera&lt;/li&gt;
+&lt;li&gt;Setup a camera with circle mask&lt;/li&gt;
+&lt;li&gt;Explore plugins&lt;/li&gt;
+&lt;li&gt;Record&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; obs&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;De-sign and resign, then restart your system to get the virtual camera to appear in Discord&lt;/p&gt;
+&lt;p&gt;See the compatibility guide here
+&lt;a href=&quot;https://obsproject.com/wiki/MacOS-Virtual-Camera-Compatibility-Guide&quot;&gt;https://obsproject.com/wiki/MacOS-Virtual-Camera-Compatibility-Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I gave up on zoom and follow for now.  Instead I use native zooming in OS X with my mouse.  But there are lots of fun scripts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;See &lt;code&gt;Tools&lt;/code&gt; &amp;gt; &lt;code&gt;Scripts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;on Zoom and Track with Python &lt;a href=&quot;https://www.youtube.com/watch?v=OUyPpol0yYo&quot;&gt;https://www.youtube.com/watch?v=OUyPpol0yYo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lua Scripts &lt;a href=&quot;https://github.com/rse/obs-scripts&quot;&gt;https://github.com/rse/obs-scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hot Key &lt;a href=&quot;https://github.com/SimonGZ/OBS-next-scene-hotkey&quot;&gt;https://github.com/SimonGZ/OBS-next-scene-hotkey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spotify Display &lt;a href=&quot;https://github.com/RayPS/obs-spotify-mac&quot;&gt;https://github.com/RayPS/obs-spotify-mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;mix-system-audio-for-music-and-more&quot; tabindex=&quot;-1&quot;&gt;Mix system audio for music and more&lt;/h3&gt;
+&lt;p&gt;Bluetooth headsets are all fun and great until you learn about sample rates.&lt;/p&gt;
+&lt;p&gt;We use &lt;a href=&quot;https://github.com/ExistentialAudio/BlackHole&quot;&gt;blackhole&lt;/a&gt; (rip soundflower).  This always trips me up more than the video issues. Sample rates among other reasons.&lt;/p&gt;
+&lt;p&gt;Steps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; blackhole-16ch&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Route any app audio you want to Blackhole. Route any mics through an app to Blackhole (i.e. GarageBand, VCV Rack, Discord)&lt;/li&gt;
+&lt;li&gt;In Sound settings, setup a Multi Device Output to allow monitoring.
+&lt;img src=&quot;https://www.ytmnb.com/livestream_audio_2.png&quot; alt=&quot;livestream audio 2&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Setup an Aggregate Device input
+&lt;img src=&quot;https://www.ytmnb.com/livestream_audio_1.png&quot; alt=&quot;livestream audio 1&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Set Aggregate Device as input and Multi-Output Device as ouput in any app you like (i.e. Discord, OBS)
+&lt;img src=&quot;https://www.ytmnb.com/livestream_audio_3.png&quot; alt=&quot;livestream audio 3&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;how-to-speak%2C-i.e.-what-makes-for-a-good-talk&quot; tabindex=&quot;-1&quot;&gt;How to speak, i.e. what makes for a good talk&lt;/h3&gt;
+&lt;p&gt;If you have an idle moment and you haven’t seen it, you might enjoy Patrick Winston at MIT and his lecture on how to speak.  It was a pleasure to watch while working on my Legigram talk.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Unzc731iCUY&quot;&gt;https://www.youtube.com/watch?v=Unzc731iCUY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oh – and now I know he has a related book to follow up on this lecture – the piles grow.&lt;/p&gt;
+&lt;h3 id=&quot;slide-formats&quot; tabindex=&quot;-1&quot;&gt;Slide formats&lt;/h3&gt;
+&lt;p&gt;We don’t have a standardized template.  I prefer using Marp but my co-host James has been converting me to Slidev (in part because it makes it easier to get picture-in-picture going – no OBS necessary if I remember correctly).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://marp.app/&quot;&gt;https://marp.app/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sli.dev/&quot;&gt;https://sli.dev/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We like PDFs for archiving.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Understanding Bainbridge&#39;s Ironies of Automation via Homer memes</title>
+		<link href="https://www.ytmnb.com/post/understanding-bainbridge&amp;#39;s-ironies-of-automation-via-homer-memes/"/>
+		<updated>2022-02-19T00:00:00Z</updated>
+		<id>https://www.ytmnb.com/post/understanding-bainbridge&amp;#39;s-ironies-of-automation-via-homer-memes/</id>
+		<content type="html">&lt;p&gt;Ask any experienced dev and they will tell you: in attempting to solve almost any problem with software, we are liable to create others.&lt;/p&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6Mbmx4k4D0xwSRDa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;To better understand this dynamic, I read (ok, skimmed) Robert Hoffman and Laura Militello’s lengthy &lt;a href=&quot;https://www.amazon.com/Perspectives-Cognitive-Task-Analysis-Applications/dp/0805861408&quot;&gt;Perspectives on Cognitive Task Analysis&lt;/a&gt;, an acronym-heavy technical survey peppered with vignettes of industrial snafus and over cluttered fighter pilot displays.&lt;/p&gt;
+&lt;p&gt;In it, I found an excellent summary of Lisanne Bainbridge’s often cited &lt;a href=&quot;https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf&quot;&gt;Ironies of Automation&lt;/a&gt; paper from 1983.&lt;/p&gt;
+&lt;p&gt;And given that an analysis of nuclear plant procedure preceded this section, I decided to illustrate these ironies with GIFs of America’s favorite nuclear plant operator – Homer J. Simpson.&lt;/p&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/xT5LMuLetv1pYsqH0A&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;So without further ado, the ironies of automation.&lt;/p&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/l2JdULh6nrvHF1hug&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;automation-necessitates-monitoring%E2%80%A6&quot; tabindex=&quot;-1&quot;&gt;Automation necessitates monitoring…&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One consequence of automation is that the human is actually given a nearly impossible task. If a process can be specified and a computer can make complex decisions more quickly and effectively than a human, the operator must determine when the automation is working properly.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The monitor needs to know what the correct behavior of the process should be. … Such knowledge requires special training or special displays … [there may be] no way in which the human operator can check in real-time that the computer is following its rules correctly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/xT5LMrX45sQcjqNmVy&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6encourages-deskilling&quot; tabindex=&quot;-1&quot;&gt;…encourages deskilling&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A second consequence is that skills deteriorate when they are not used. As we know from studies of vigilance, “an operator will not monitor the automatics effectively if they have been operating acceptably for a long period.” The operator has less opportunity to explore and understand how the process is working.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An operator will only be able to generate successful new strategies for unusual situations if he has an adequate knowledge of the process … the operator has in his head not raw data about the process state but the results of making predictions and decisions about the process which will be useful in future situations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This develops only through practice with feedback, and the monitoring role often precludes that.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6Mbg5OZ2iqfePCTK&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6but-requires-skilled-intervention&quot; tabindex=&quot;-1&quot;&gt;…but requires skilled intervention&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A third consequence involves what happens when an automated process goes awry.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the human is not involved in on-line control he will not have a detailed knowledge of the current state of the system. … When manual take-over is needed there is likely to be something wrong with the process so that unusual actions will be needed to control it, and one can argue that the operator needs to be more rather than less skilled. … By taking away the easy parts of his task, automation can make the more difficult parts of the human operator’s task more difficult.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:75%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6MbgDyQ1AMxXOiYM&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6while-enabling-poor-supervision&quot; tabindex=&quot;-1&quot;&gt;…while enabling poor supervision&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Monitoring is often predicated on the notion that the operator can call in specialized expertise in unusual situations. Here too is an irony: “The supervisor too will not be able to take over if he has not been reviewing his relevant knowledge or practicing a crucial skill.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:77%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3orif5FaudYtfbVBpm&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6and-demoralizing-an-overly-liable-operator.&quot; tabindex=&quot;-1&quot;&gt;…and demoralizing an overly liable operator.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In sum, the monitor has a job that is at once very boring and very responsible, “yet there is no opportunity to acquire or maintain the qualities required to handle the responsibility … [when] the job is ‘de-skilled’ by being reduced to monitoring.”   Bainbridge cited studies showing that job satisfaction is higher and stress lower when workers are actively engaged in the control of processes that are complex yet highly controllable.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/l2Je367ozZKoka5RC&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;alarms-only-help-so-much%E2%80%A6&quot; tabindex=&quot;-1&quot;&gt;Alarms only help so much…&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Potential solutions to these conundrums have themselves resulted in ironies of automation. One approach is to create alarms and specialized displays for use in certain kinds of unusual situations. Catastrophic problems can be easy to detect.&lt;/p&gt;
+&lt;p&gt;However, the trends that show a path to failure are not always obvious; displays that are ideal for normal situations may disguise abnormal ones.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3orieRSPKRODbLKBPO&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6because-automation-encourages-routine.&quot; tabindex=&quot;-1&quot;&gt;…because automation encourages routine.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Furthermore, the automated systems work constantly to correct deviations from the norm, and thus when an alarm sounds or a catastrophic break has occurred, the trend may be beyond the capacity of the human monitor to understand and act on quickly, compounded by the fact that the operator will be most practiced in using the displays that are for routine operations and routine monitoring activities. And if the human operator does not believe or agree with the computer, he may be unable to trace back what it was that the computer did.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6MbqRUt6XH1OaGL6&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;modal-interfaces-can-confuse%E2%80%A6&quot; tabindex=&quot;-1&quot;&gt;Modal interfaces can confuse…&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Another approach is to create displays that are designed to match the operator’s level of skill […] or proficiency level (e.g., trainee versus journeyman versus expert). In theory, the computer could detect the level of skill or strategic style of the operator and adjust the display accordingly. Bainbridge argued that such capabilities of multiple displays might confuse rather than help:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The changes between knowledge-based thinking and “reflex” reaction is not solely a function of practice, but also depends on the uncertainty of the environment, so that the same task elements may be done using different types of skill at different times. … We do not know how confused operators would be by display changes which were not under their own control … although operators evidently do think at different levels of complexity and abstraction at different times, it is not clear that they would be able to use, or choose, many different displays under time stress.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6Mbsras7qdAwgABW&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6and-encourage-poor-comprehension.&quot; tabindex=&quot;-1&quot;&gt;…and encourage poor comprehension.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Another irony that stems from the creation of better interfaces links back to the issue of the degradation of knowledge:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The more processing for meaning that some data has received, the more effectively it is remembered. This makes one wonder how much the operator will learn about the structure of the process if information about it is presented so successfully that he does not have to think about it to take it in. It certainly would be ironic if we find that the most compatible display is not the best display to give the operator after all! A highly compatible display [that] supports rapid reactions [may not support] acquisition of the knowledge and thinking skills needed in abnormal conditions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6MbdrSF5Z3Fn97Yk&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;repair-can-require-improvisation%E2%80%A6&quot; tabindex=&quot;-1&quot;&gt;Repair can require improvisation…&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are also ironies that are resultant from training.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is inadequate to expect the operator to react to unfamiliar events solely by consulting operating procedures. These cannot cover all the possibilities, so the operator is expected to monitor them and fill in the gaps. However, it is ironic to train operators in following instructions and then put them in the system to provide intelligence.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/d2VNBUe0BhUGYqpa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;%E2%80%A6and-simulation-can-only-help-so-much.&quot; tabindex=&quot;-1&quot;&gt;…and simulation can only help so much.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;High-fidelity simulations can help workers maintain skills and can provide opportunities to practice some nonroutine situations, but they cannot help in dealing with unknown faults and complex failures having multiple causes that cannot be anticipated (and hence cannot be simulated). A final irony is that “the most successful automated systems, with rare need for manual intervention … may need the greatest investment in human operator training.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:75%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/qqtvGYCjDNwac&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&quot;tldr%3A-automation-adds-complexity-and-that-means-more-challenging-decisions.&quot; tabindex=&quot;-1&quot;&gt;tldr: Automation adds complexity and that means more challenging decisions.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Thus, for a number of reasons it is necessary for the human to be able to understand and follow the operations of the automation. This is, of course, an irony that the automated system was created to help the human cope with the complexity of process being controlled but ends up forcing the human to understand the complexities of the automated system. This can make human performance worse in a number of ways. For instance, when the operator does not understand or trust the automation, he will attempt to make control decisions anyway, and so the additional task of having to monitor the automation adds to workload—ironic, because automation is intended to reduce workload.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3orifh21okr0EZbICA&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bainbridge cited instances in which automation does help, for instance, aircraft autopilots that work to free the pilot from online control and thus allow the pilot to think about the challenges or abnormalities. In such cases, the human knows which process the computer is thinking about and (to some degree) what the computer is trying to accomplish. Good interfaces are ones in which key types of information are presented in dedicated displays (e.g., one display of process plant layout and another of process functionality). “Operators should not have to page between displays to obtain information about abnormal states in parts of the process other than the one they are currently thinking about, nor between displays giving information needed within a single decision process.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Does your automation encourage better decisions – or worse?&lt;/p&gt;
+&lt;!--
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3orifd2IjZjWVkpC4o&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o6MbiZ0jySdVDY4pO&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/l2JeblbdfRL0i2qOI&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+--&gt;
+&lt;div class=&quot;my-7&quot; style=&quot;width:100%;height:0;padding-bottom:76%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/l2Je4nuc11cMXpzt6&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;For a more patient read, consider Adrian Colyer’s &lt;a href=&quot;https://blog.acolyer.org/2020/01/08/ironies-of-automation/&quot;&gt;take&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Grappling with Complexity</title>
+		<link href="https://www.ytmnb.com/post/grappling-with-complexity/"/>
+		<updated>2022-02-05T00:00:00Z</updated>
+		<id>https://www.ytmnb.com/post/grappling-with-complexity/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;Controlling complexity is the essence of computer programming.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brian W. Kernighan, Software Tools (1976), p. 319 (with P. J. Plauger).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We have many ways to suffer complexity. Religion, law, science, art, math, philosophy – among these, computer programming takes a special place.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Computer programming, however, creates with an exceedingly tractable medium. The programmer builds from pure thought-stuff: concepts and very flexible representations thereof.  Because the medium is tractable, we expect few difficulties in implementation; hence our pervasive optimism. Because our ideas are faulty, we have bugs; hence our optimism is unjustified.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fred Brooks, &lt;a href=&quot;https://www.cs.drexel.edu/~yfcai/CS451/RequiredReadings/MythicalManMonth.pdf&quot;&gt;The Mythical Man Month&lt;/a&gt;, p. 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, in the realm of computation, given an algorithm with an input $n$ we can think of its complexity as a function $f(n)$. That is:&lt;/p&gt;
+&lt;p&gt;$$ n \to f(n) $$&lt;/p&gt;
+&lt;p&gt;We can use &lt;a href=&quot;https://en.wikipedia.org/wiki/Big_O_notation&quot;&gt;Big O notation&lt;/a&gt; for comparing the time and space demands of algorithms. And advances in computer science, computing power, and resources, c.f. &lt;a href=&quot;https://en.wikipedia.org/wiki/Moore%27s_law&quot;&gt;Moore’s Law&lt;/a&gt;, allow us to take ever more of the underlying complexity for granted – while also encouraging us to add to our overall complexity in ways that are not so easily measured.&lt;/p&gt;
+&lt;p&gt;Indeed, when I try to think about the implications of &lt;a href=&quot;https://ev.medium.com/value-is-moving-up-the-stack-bc6d8ee797ff&quot;&gt;value moving up the stack&lt;/a&gt; as per Ev Williams &lt;em&gt;and&lt;/em&gt; &lt;a href=&quot;https://www.wsj.com/articles/SB10001424053111903480904576512250915629460&quot;&gt;software eating the world&lt;/a&gt; as per Marc Andreesen, and all the artifacts and affordances of such aggregated complexity – I tend to just get overloaded and shutdown.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Computing’s core challenge is how not to make a mess of it. If people object that any science has to meet that challenge, we should give a double rebuttal.&lt;/p&gt;
+&lt;p&gt;Firstly, machines are so fast and storage capacities are so huge that we face orders of magnitude more room for confusion, the propagation and diffusion of which are easily inadvertently mechanized.&lt;/p&gt;
+&lt;p&gt;Secondly, because we are dealing with artefacts, all unmastered complexity is of our own making; there is no one else to blame and so &lt;em&gt;we had better learn how not to introduce the complexity in the first place&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Edsger Dijsktra, &lt;a href=&quot;https://www.cs.utexas.edu/users/EWD/transcriptions/EWD12xx/EWD1243.html&quot;&gt;EWD 1243 The Next Fifty Years&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Were it only so simple to keep complexity out as the computers and code proliferate.&lt;/p&gt;
+&lt;p&gt;Indeed, there’s a plain &lt;a href=&quot;https://en.wikipedia.org/wiki/Rebound_effect_(conservation)&quot;&gt;rebound effect&lt;/a&gt; from simple interfaces to high power computing and consequent complexity.  When we consider &lt;a href=&quot;https://en.wikipedia.org/wiki/Wirth%27s_law&quot;&gt;Wirth’s Law&lt;/a&gt; that software gets slower as the hardware gets faster, we could be forgiven for extending it to our own thinking and larger social structure as we feedback more into the computers.&lt;/p&gt;
+&lt;p&gt;We have the idea of induced demand, and the ensuing logjams of &lt;a href=&quot;https://en.wikipedia.org/wiki/Braess%27s_paradox&quot;&gt;Braess’s paradox&lt;/a&gt; where more roads lead to a slower road network.  See also the &lt;a href=&quot;https://en.wikipedia.org/wiki/SnackWell_effect&quot;&gt;SnackWell effect&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Jevons_paradox&quot;&gt;Jevons paradox&lt;/a&gt;, or the &lt;a href=&quot;https://en.wikipedia.org/wiki/Downs%E2%80%93Thomson_paradox&quot;&gt;Downs-Thomson paradox&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This rebound effect suggests that our the interface of humans and computers is on course to get worse for us as individuals &lt;em&gt;and&lt;/em&gt; groups but disparately and differently&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Consider &lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_law&quot;&gt;Conway’s law&lt;/a&gt; that a software interface will reflect the social boundaries of the organization that created it.  That might sound a little tenuous at first. But if you are sizing a team for a new project, refactoring a legacy codebase, or tracking down out of date dependencies, it may well ring loudly in your ears.&lt;/p&gt;
+&lt;p&gt;No wonder then that we see not only all manner of programer productivity ‘hacks’ and likewise management guidance to reduce organizational complexity. Interrupts must be reduced. Hierarchies flattened. Onboarding must be accelerated.  Developers shouldn’t have to worry about lunch.&lt;/p&gt;
+&lt;p&gt;Setting planks across tarpits, building a golden path for developers, we also prioritize user focused design. Lean this, agile that, blazing another happy path for users so the software endeavor can thrive. We will tame complexity and deliver value.&lt;/p&gt;
+&lt;p&gt;So in summary…&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Software is eating the world&lt;/li&gt;
+&lt;li&gt;Value is moving up the stack&lt;/li&gt;
+&lt;li&gt;Software incorporates and ties into the chaos of social boundaries&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Well, it all seems bully for the 1% – and occassionally users, developers, and free loaders - caution is merited. With a hat tip again to Brooks’ list of essential difficulties of software listed in &lt;a href=&quot;https://web.archive.org/web/20160910002130/http://worrydream.com/refs/Brooks-NoSilverBullet.pdf&quot;&gt;No Silver Bullet&lt;/a&gt;, we can say:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;software allows problems to be made invisible or inescapable&lt;/li&gt;
+&lt;li&gt;its complexity to be taken for granted or exploded&lt;/li&gt;
+&lt;li&gt;changes become difficult or catastrophic&lt;/li&gt;
+&lt;li&gt;integration can become impossible or ineradicable.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With more people programming now than ever before, more users, more stake holders – not to mention more dependencies, higher expectations, more requirements – more code, more AI – and on a happy occassion, more budget – all of that means more entropy, more interconnected but disjoint effects – fragility which, in aggregate, makes for a fierce form of Kessler Syndrome.&lt;/p&gt;
+&lt;p&gt;To what extent are we simply shifting or amoritizing complexity and exploiting the inability of disempowered groups to keep tabs much less pace?&lt;/p&gt;
+&lt;p&gt;Yes, it may be easier than ever to spin up a web app with all sorts of real time functionality and UX polish or a chatbot to execute business compromise email scams. Democratization. Keep in mind we also have banks running COBOL, the stripping of value and care from organizations and communities, Windows XP running on nuclear subs… need I go on?&lt;/p&gt;
+&lt;p&gt;Now, I am scratching at the surface here and not giving us much of a way out.  To get a bit more granular - perhaps you can lead me out of this pit - read some of Sarah Sheard’s amazing work &lt;a href=&quot;https://resources.sei.cmu.edu/asset_files/Presentation/2015_017_001_447399.pdf&quot;&gt;describing complexity of systems and software&lt;/a&gt;. For instance, in her excellent &lt;a href=&quot;https://resources.sei.cmu.edu/asset_files/Article/2014_101_001_446824.pdf&quot;&gt;Dynamics of Software Sustainment&lt;/a&gt;, she quotes a US Air Force report that software sustainment can run to 70% of the total cost for of the life of a software project.  That both explains some of the appeal of the &lt;a href=&quot;https://www.reuters.com/article/us-usa-lockheed-f35/u-s-f-35-fighter-modernization-could-cost-16-billion-through-2024-idUSKCN1GK02M&quot;&gt;F-35&lt;/a&gt; – a veritable &lt;a href=&quot;https://simpsons.fandom.com/wiki/The_Homer&quot;&gt;Homer&lt;/a&gt; - but also is cause for great concern for our programmatic future.&lt;/p&gt;
+&lt;p&gt;Perhaps &lt;a href=&quot;https://en.wikipedia.org/wiki/Elinor_Ostrom&quot;&gt;Elinor Ostrom&lt;/a&gt;’s work on governance and
+the commons makes for the right complement to, say, &lt;a href=&quot;https://www.youtube.com/watch?v=AvqcM36g5hg&quot;&gt;this analysis by voting machine expert Harri Hursti on the government’s evolving zero trust mandate&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Wait — what is a programming language?</title>
+		<link href="https://www.ytmnb.com/post/wait-what-is-a-programming-language/"/>
+		<updated>2022-01-29T00:00:00Z</updated>
+		<id>https://www.ytmnb.com/post/wait-what-is-a-programming-language/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;What we mean by a programming language is something we use to tell a computer what to do.&lt;/p&gt;
+&lt;p&gt;– Paul Graham, &lt;a href=&quot;http://www.paulgraham.com/icad.html&quot;&gt;Revenge of the Nerds&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Given the collaborative nature of most software development at this point, let us say that programming is, often enough, describing what we want a computer to do. It may seem a semantic or pedantic 😬 point, but if you have had to collaborate with code — whether defining a spec, on-boarding, context switching, or regression testing — you are familiar with the burden of the man-made complexity that can manifest in a code base. But the &lt;em&gt;we&lt;/em&gt; there is important.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Programs must be written for people to read, and only incidentally for machines to execute.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Harold Abelson and Gerald Jay Sussman with Julie Sussman, &lt;a href=&quot;https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-7.html#%25_chap_Temp_4&quot;&gt;“Structure and Interpretation of Computer Programs”, preface to the first edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, a program tells a computer what to do and a programming language allows us to do that.&lt;/p&gt;
+&lt;p&gt;But if that’s all it does, it’s more of a &lt;em&gt;computing&lt;/em&gt; language (c.f. Dijkstra’s definition in &lt;a href=&quot;https://www.smaldone.com.ar/documentos/ewd/EWD1036_pretty.html&quot;&gt;EWD1036&lt;/a&gt;) – which is to say that a programming language also has to tell &lt;strong&gt;us&lt;/strong&gt; what we want a computer to do. Accordingly, a programming language that allows us to write, read, and discuss such functionality more effectively should be desired over others – all other things held equal.&lt;/p&gt;
+&lt;p&gt;Programming languages depend on communities of users and supporters to thrive. The more immediately obvious, compelling, effective and delightful a tool is to use, the more people will be drawn to it, and programming languages are no exception.&lt;/p&gt;
+&lt;p&gt;That said, there can be a frustrating conundrum where easy to learn but difficult to master languages enable the production of large amounts of worse code – worse meaning that the code may be fragile, difficult to comprehend, and not function as expected (c.f. the front end codebase in the abandoned project you just inherited). Ideally, a language would have a low bar, a high ceiling – but many of the problems associated with a given language are often reflections of societal pressures that have manifested in code.&lt;/p&gt;
+&lt;p&gt;So when selecting a language or a framework for a project, consider how you will go about answering these questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Who will design, implement, change, and maintain this codebase? How?&lt;/li&gt;
+&lt;li&gt;What do we want the computers to do?&lt;/li&gt;
+&lt;li&gt;What do the users want and need?&lt;/li&gt;
+&lt;li&gt;What does the communities want and need?&lt;/li&gt;
+&lt;li&gt;How will we measure failures? Success?&lt;/li&gt;
+&lt;li&gt;What else might the computers end up doing in the process and does it matter? And us?&lt;/li&gt;
+&lt;li&gt;At what pace should we run? What will be our milestones?&lt;/li&gt;
+&lt;li&gt;How will we discuss these things over the course of the project and beyond?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These questions become easier to answer when we have programming languages and frameworks that encourage us to discuss them effectively.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Five book recommendations for full stack developers</title>
+		<link href="https://www.ytmnb.com/post/five-book-recommendations-for-full-stack-developers/"/>
+		<updated>2022-01-28T00:00:00Z</updated>
+		<id>https://www.ytmnb.com/post/five-book-recommendations-for-full-stack-developers/</id>
+		<content type="html">&lt;p&gt;There are so many lists out there for software development, programming, etc that just go on and on.  Here’s my attempt at a short list that touches on the tech but focuses on what software can do for people.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://worrydream.com/refs/Brooks-NoSilverBullet.pdf&quot;&gt;Fred Brooks’ &lt;em&gt;No Silver Bullet&lt;/em&gt;&lt;/a&gt;.  A succinct statement of ‘the problem of software’: complexity, conformity, invisibility, changeability.  If you want more, follow it with &lt;a href=&quot;http://curtclifton.net/papers/MoseleyMarks06a.pdf&quot;&gt;Ben Moseley and Peter Marks’s &lt;em&gt;Out of the Tarpit&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959&quot;&gt;Brooks’s &lt;em&gt;Mythical Man Month&lt;/em&gt;&lt;/a&gt;, or Dijkstra’s &lt;a href=&quot;https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html&quot;&gt;EWD 1036&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339&quot;&gt;Nicole Forsgren, Jez Humble, and Gene Kim’s &lt;em&gt;Accelerate: The Science of Lean Software and DevOps&lt;/em&gt;&lt;/a&gt;.  Three authors, two subtitles, and 24 specific recommendations based on a bunch of research. 288 pages but a good chunk of that is a review of their methodology.  Not much filler in here. Maybe follow it with &lt;a href=&quot;https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897&quot;&gt;Camille Fournier’s &lt;em&gt;The Manager’s Path&lt;/em&gt;&lt;/a&gt; if you are figuring out how to handle not just tech but a team.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Inmates-Are-Running-Asylum-Products/dp/0672326140&quot;&gt;Alan Cooper’s &lt;em&gt;The Inmates are Running the Asylum&lt;/em&gt;&lt;/a&gt;. Not everything we do with software should point to a specific goal – but a lot should, and Cooper helped make interaction design into a profession. You could follow with &lt;a href=&quot;https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654/ref=sr_1_1?keywords=the+design+of+everyday+things&amp;amp;qid=1643430479&amp;amp;s=books&amp;amp;sprefix=the+desing+o%2Cstripbooks%2C88&amp;amp;sr=1-1&quot;&gt;Don Norman’s &lt;em&gt;The Design of Everyday Things&lt;/em&gt;&lt;/a&gt; or &lt;a href=&quot;https://s3.amazonaws.com/TalkingtoHumans/Talking+to+Humans.pdf&quot;&gt;Giff Constable’s &lt;em&gt;Talking to Humans&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Managing-Professional-Service-David-Maister/dp/0684834316&quot;&gt;David Maister’s &lt;em&gt;Managing the Professional Service Firm&lt;/em&gt;&lt;/a&gt;. Ostensibly written for law firms, this book’s questions and insights can help you create more value for clients and work better with your team.  You could also try &lt;a href=&quot;https://www.amazon.com/Financial-Times-Guide-Business-Development/dp/0273759531&quot;&gt;Ian Cooper’s &lt;em&gt;FT Guide to Business Development&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.amazon.com/SNAP-Selling-Business-Frazzled-Customers/dp/1591844703/&quot;&gt;Julie Konrath’s &lt;em&gt;Snap Selling&lt;/em&gt;&lt;/a&gt;, or &lt;a href=&quot;https://www.amazon.com/Mastering-Complex-Sale-Compete-Stakes/dp/0470533110&quot;&gt;Jeff Thull’s &lt;em&gt;Mastering the Complex Sale&lt;/em&gt;&lt;/a&gt; to tweak your sales brain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898&quot;&gt;Eric Ries’s &lt;em&gt;The Lean Start Up&lt;/em&gt;&lt;/a&gt;. Okay, yes, this one is definitely veering into airport layover material.  A lot of business is just about thinking, doing, and checking – and that’s basically what this book outlines.  So yeah, it’s a great primer on product development. You could follow it with &lt;a href=&quot;https://basecamp.com/shapeup&quot;&gt;Ryan Singer’s &lt;em&gt;Shape Up&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So, let’s call that five?&lt;/p&gt;
+</content>
+	</entry>
+</feed>
