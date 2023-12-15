@@ -17,7 +17,8 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
                         <span datetime="{{ date }}">{{ date | dateDisplay }}</span></p>
                 {% endif %}
             {% endif %}
-            <h2><a href="{{url}}">{{ title }}</a></h2>
+
+            <h2 class="text-3xl"><a href="{{url}}">{{ title }}</a></h2>
 
             {% if excerpt %}
                 <p class="excerpt">{{ excerpt }}</p>
@@ -39,7 +40,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
             {% endif %}
         </div>
 
-        <div class="content post border-t-2 border-red-500 py-6">
+        <div class="content post border-y-2 border-red-500 py-6">
 
             {{ content | safe }}
         </div>
